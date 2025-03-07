@@ -1,12 +1,11 @@
 package com.example.openai.config
 
 import org.springframework.ai.chat.client.ChatClient
-import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor
-import org.springframework.ai.chat.memory.InMemoryChatMemory
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.core.io.Resource
+import org.springframework.web.client.RestTemplate
 
 @Configuration
 open class AppConfig(
@@ -25,4 +24,10 @@ open class AppConfig(
             //.defaultAdvisors(MessageChatMemoryAdvisor(InMemoryChatMemory()))
             .build();
     }
+
+    @Bean
+    open fun restTemplate() : RestTemplate {
+        return RestTemplate();
+    }
+
 }
