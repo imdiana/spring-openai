@@ -22,7 +22,7 @@ open class AppConfig(
         return chatClientBuilder
             //.defaultSystem("당신은 교육 투터입닏. 개념을 명확하고 간단하게 설명하세요.") //System Message(LLM에 역할 부여)
             //.defaultSystem(resource)
-            .defaultAdvisors(MessageChatMemoryAdvisor(InMemoryChatMemory()))
+            //.defaultAdvisors(MessageChatMemoryAdvisor(InMemoryChatMemory()))
             .build();
     }
 }
