@@ -14,4 +14,11 @@ class RouteController {
     fun imageView() : String {
         return "image"
     }
+
+    @GetMapping("/view/image-voice")
+    fun imageVoiceView() : String {
+        return "imagev"
+    }
+
+
 }
