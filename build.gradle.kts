@@ -22,9 +22,12 @@ extra["springAiVersion"] = "1.0.0-M6"
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.ai:spring-ai-openai-spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+    annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
 }
 
 dependencyManagement {

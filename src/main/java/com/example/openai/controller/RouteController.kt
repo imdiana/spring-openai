@@ -20,5 +20,9 @@ class RouteController {
         return "imagev"
     }
 
+    @GetMapping("/view/image-text")
+    fun imageTextView() : String {
+        return "imagetext"
+    }
 
 }
