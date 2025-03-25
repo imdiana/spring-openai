@@ -28,6 +28,7 @@ dependencies {
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+    implementation("org.jetbrains.kotlin:kotlin-reflect")
 }
 
 dependencyManagement {

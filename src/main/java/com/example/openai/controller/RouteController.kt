@@ -24,5 +24,10 @@ class RouteController {
     fun imageTextView() : String {
         return "imagetext"
     }
+    @GetMapping("/view/recipe")
+    fun recipeView() : String {
+        return "recipe"
+    }
+
 
 }
